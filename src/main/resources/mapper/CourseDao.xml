@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mikuac.shiro.dao.CourseDao">
+
+    <resultMap type="com.mikuac.shiro.entity.Course" id="CourseMap">
+        <result property="studentnumber" column="studentNumber" jdbcType="VARCHAR"/>
+        <result property="coursename" column="courseName" jdbcType="VARCHAR"/>
+        <result property="site" column="site" jdbcType="VARCHAR"/>
+        <result property="section" column="section" jdbcType="VARCHAR"/>
+        <result property="teacher" column="teacher" jdbcType="VARCHAR"/>
+        <result property="day" column="day" jdbcType="VARCHAR"/>
+        <result property="openingweek" column="openingWeek" jdbcType="VARCHAR"/>
+    </resultMap>
+
+</mapper>
+

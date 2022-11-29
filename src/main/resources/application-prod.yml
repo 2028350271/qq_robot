@@ -1,0 +1,32 @@
+server:
+  port: 5555
+
+shiro:
+  limiter:
+    enable: true
+    rate: 1
+    capacity: 5
+    await-task: false
+  debug: true
+  plugin-list:
+    - com.mikuac.shiro.plugin.Weather
+    - com.mikuac.shiro.plugin.LoginEduSystem
+    - com.mikuac.shiro.plugin.IntelligentEntertainmentChat
+
+# mysql
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/qqrobot?serverTimezone=UTC
+    username: qqrobot
+    password: WdX6B6KcERk4e5An
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+  main:
+    allow-circular-references: true
+
+# mybatis-plus
+mybatis-plus:
+  configuration:
+    # 数据库格式自动转为小驼峰
+    map-underscore-to-camel-case: true
+    auto-mapping-behavior: full

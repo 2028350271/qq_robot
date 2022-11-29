@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mikuac.shiro.dao.UserDao">
+
+    <resultMap type="com.mikuac.shiro.entity.User" id="UserMap">
+        <result property="qqnumber" column="qqNumber" jdbcType="VARCHAR"/>
+        <result property="studentnumber" column="studentNumber" jdbcType="VARCHAR"/>
+        <result property="password" column="password" jdbcType="VARCHAR"/>
+        <result property="cookies" column="cookies" jdbcType="VARCHAR"/>
+    </resultMap>
+
+</mapper>
+
